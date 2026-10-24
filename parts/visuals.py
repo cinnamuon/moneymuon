@@ -1,6 +1,8 @@
 def SetStyle(bold: bool, color: str, message: str):
-    # choices are green, bold green, red, bold red, default
-
+    """
+    Choices are green, bold green, red, bold red, default
+    """
+    
     if not bold and color == "green":
         return "\x1b[%sm%s\x1b[0m" % ("0;32", message)
     if bold and color == "green":
